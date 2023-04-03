@@ -53,7 +53,7 @@ export default async function handler(
       chat_history: history || [],
     });
 
-    console.log('response', response);
+    // console.log('response', response);
     sendData(JSON.stringify({ sourceDocs: response.sourceDocuments }));
   } catch (error) {
     console.log('error', error);
